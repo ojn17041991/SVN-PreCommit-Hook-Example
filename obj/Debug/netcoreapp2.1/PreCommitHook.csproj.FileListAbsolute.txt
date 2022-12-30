@@ -1,0 +1,12 @@
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\obj\Debug\netcoreapp2.1\PreCommitHook.csprojAssemblyReference.cache
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\obj\Debug\netcoreapp2.1\PreCommitHook.csproj.CoreCompileInputs.cache
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\obj\Debug\netcoreapp2.1\PreCommitHook.AssemblyInfoInputs.cache
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\obj\Debug\netcoreapp2.1\PreCommitHook.AssemblyInfo.cs
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\bin\Debug\netcoreapp2.1\PreCommitHook.deps.json
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\bin\Debug\netcoreapp2.1\PreCommitHook.runtimeconfig.json
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\bin\Debug\netcoreapp2.1\PreCommitHook.runtimeconfig.dev.json
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\bin\Debug\netcoreapp2.1\PreCommitHook.dll
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\bin\Debug\netcoreapp2.1\PreCommitHook.pdb
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\obj\Debug\netcoreapp2.1\PreCommitHook.dll
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\obj\Debug\netcoreapp2.1\PreCommitHook.pdb
+C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\bin\Debug\netcoreapp2.1\PreCommitHook.dll.config

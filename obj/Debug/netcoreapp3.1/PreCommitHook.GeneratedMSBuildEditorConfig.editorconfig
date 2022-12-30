@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = PreCommitHook
+build_property.ProjectDir = C:\Users\onicholls\source\repos\PreCommitHook\PreCommitHook\

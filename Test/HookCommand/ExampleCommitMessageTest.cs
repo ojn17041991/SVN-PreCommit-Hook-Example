@@ -6,10 +6,13 @@ using PreCommitHook.Test.HookCommand.Abstract;
 
 namespace PreCommitHook.Test.HookCommand
 {
-	public class CommitMessageTest : BaseHookTest
+	public class ExampleCommitMessageTest : BaseHookTest
 	{
-        public CommitMessageTest(ConfigHelper configHelper, ProcessHelper processHelper, string repos, string txn) :
-                            base(configHelper, processHelper, repos, txn)
+        // This is an example of how to process the commit text on an SVN commit.
+        // In this case, we'll just check that a commit message was provided.
+
+        public ExampleCommitMessageTest(ConfigHelper configHelper, ProcessHelper processHelper, string repos, string txn) :
+                                   base(configHelper, processHelper, repos, txn)
         {
             ErrorCode = Error.CommitMessageEmpty;
         }

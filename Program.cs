@@ -14,11 +14,6 @@ namespace PreCommitHook
         static string Repos { get; set; }
         static string Txn { get; set; }
 
-        /// <summary>
-        /// Entry point from console.
-        /// </summary>
-        /// <param name="args">Contains the repository and transaction identifiers.</param>
-        /// <returns>An error code corresponding to the result of the commit tests.</returns>
         static int Main(string[] args)
         {
             LogHelper.Info($"Main({args})");
@@ -37,11 +32,6 @@ namespace PreCommitHook
             return errorCode;
         }
 
-        /// <summary>
-        /// Setup the helper classes and extract the repository and transaction identifiers from the args.
-        /// </summary>
-        /// <param name="args">Contains the repository and transaction identifiers.</param>
-        /// <returns>True if the setup was performed without error. False otherwise.</returns>
         static bool Setup(string[] args)
         {
             LogHelper.Info($"Setup({args})");
@@ -52,8 +42,8 @@ namespace PreCommitHook
                 ProcessHelper = new ProcessHelper();
                 TestRunner = new TestRunner();
 
-                Repos = "C:/Repositories/HookTest"; // args[0];
-                Txn = "12-4g"; // args[1];
+                Repos = args[0];
+                Txn = args[1];
             }
             catch (Exception e)
             {
@@ -64,10 +54,6 @@ namespace PreCommitHook
             return true;
         }
 
-        /// <summary>
-        /// Run each of the tests to confirm that the commit is acceptable.
-        /// </summary>
-        /// <returns>An error code corresponding to the result of the commit tests.</returns>
         static Error RunTests()
         {
             LogHelper.Info("RunTests()");
@@ -88,7 +74,7 @@ namespace PreCommitHook
             // Start running the main tests:
             // 1) Make sure we have a commit message.
             if (!TestRunner.RunTest(
-                new CommitMessageTest(ConfigHelper, ProcessHelper, Repos, Txn),
+                new ExampleCommitMessageTest(ConfigHelper, ProcessHelper, Repos, Txn),
                 ref errorCode,
                 ref response))
             {
@@ -96,7 +82,7 @@ namespace PreCommitHook
                 return errorCode;
             }
 
-            // 2) Make sure none of the committed files contain "ExampleFileName".
+            // 2) Make sure none of the committed file names contain "ExampleFileName".
             if (!TestRunner.RunTest(
                 new ExampleFileNameTest(ConfigHelper, ProcessHelper, Repos, Txn),
                 ref errorCode,

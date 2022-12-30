@@ -6,7 +6,7 @@ namespace PreCommitHook.Test
 {
     public class TestRunner
     {
-        ErrorHelper errorHelper = new ErrorHelper();
+        private ErrorHelper errorHelper = new ErrorHelper();
 
         public bool RunTest(BaseHookTest test, ref Error errorCode, ref string response)
         {

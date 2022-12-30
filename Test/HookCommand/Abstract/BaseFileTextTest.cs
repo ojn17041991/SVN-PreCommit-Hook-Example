@@ -8,7 +8,7 @@ namespace PreCommitHook.Test.HookCommand.Abstract
     public abstract class BaseFileTextTest : BaseHookTest
     {
         public BaseFileTextTest(ConfigHelper configHelper, ProcessHelper processHelper, string repos, string txn) :
-                                base(configHelper, processHelper, repos, txn)
+                           base(configHelper, processHelper, repos, txn)
         {
             // Pass through to the base class.
         }

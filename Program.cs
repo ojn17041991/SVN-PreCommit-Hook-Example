@@ -78,7 +78,6 @@ namespace PreCommitHook
                 ref errorCode,
                 ref response))
             {
-                Console.WriteLine(response);
                 return errorCode;
             }
 
@@ -88,7 +87,6 @@ namespace PreCommitHook
                 ref errorCode,
                 ref response))
             {
-                Console.WriteLine(response);
                 return errorCode;
             }
 
@@ -98,7 +96,6 @@ namespace PreCommitHook
                 ref errorCode,
                 ref response))
             {
-                Console.WriteLine(response);
                 return errorCode;
             }
 

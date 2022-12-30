@@ -16,7 +16,7 @@ namespace PreCommitHook.Test
             // If an error was found, then terminate here with the appropriate error code and message.
             if (errorCode > Error.Success)
             {
-                response = $@"@echo {errorHelper.GetErrorMessage(errorCode)} >&2";
+                LogHelper.Warning(errorHelper.GetErrorMessage(errorCode));
                 return false;
             }
             else

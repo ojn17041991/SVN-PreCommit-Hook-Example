@@ -19,7 +19,7 @@ namespace PreCommitHook.Test.HookCommand
 
         public override Error Execute()
         {
-            LogHelper.Info("CommitMessageTest.Execute()");
+            LogHelper.Info("ExampleCommitMessageTest.Execute()");
 
             // Check if the individual test has been disabled by the config.
             if (!Enabled)

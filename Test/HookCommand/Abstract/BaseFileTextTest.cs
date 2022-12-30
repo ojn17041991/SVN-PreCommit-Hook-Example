@@ -17,6 +17,8 @@ namespace PreCommitHook.Test.HookCommand.Abstract
 
         public override Error Execute()
         {
+            LogHelper.Info($"{GetType().Name}.Execute()");
+
             // Check if the individual test has been disabled by the config.
             if (!Enabled)
             {
